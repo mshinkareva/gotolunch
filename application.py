@@ -3,6 +3,10 @@ from requests import get
 import json
 import random
 
+#from OpenSSL import SSL
+#context = SSL.Context(SSL.PROTOCOL_TLSv1_2)
+#context.use_privatekey_file('device.key')
+#context.use_certificate_file('gtl.one.crt')
 
 app = Flask(__name__)
 
