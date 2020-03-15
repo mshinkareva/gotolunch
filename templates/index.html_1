@@ -1,0 +1,8 @@
+{% block title %}
+    Log In
+{% endblock %}
+test
+{% block main %}
+home
+{% endblock %}
+

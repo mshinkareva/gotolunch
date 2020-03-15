@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- https://favicon.io/emoji-favicons/money-mouth-face/ -->
+        <link href="/static/favicon.ico" rel="icon">
+
+        <link href="/static/styles.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=a7982412-9c7f-47d4-a37f-b0dae30d342b&lang=ru_RU" type="text/javascript"></script>
+
+        <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                zoom: 7
+            });
+        }
+    </script>
+        <title>API карт </title>
+
+
+    </head>
+    <body>
+        <div id="map"></div>
+        <center>
+            <button type="button" class="btn btn-danger" id="search_btn" onclick="search();">Search</button>
+         </center>
+    </body>
+
+<script>
+
+// function search(){
+//     $.post("/search",
+//     {
+//         latitude: latitude,
+//         longitude: longitude
+//     }).done(function(response)
+//     {
+//      var latitude_res = Object.values(response)[0][0]
+//      var longitude_res = Object.values(response)[0][1]
+//      DG.marker([latitude_res,longitude_res]).addTo(map);
+
+
+//  })
+
+// }
+</script>
+</html>
+
+
+
+
